@@ -1,6 +1,6 @@
 const AWS = require('aws-sdk')
 const async = require('async')
-const bucketName = "pandeysoni"
+const bucketName = "grownorthspike"
 const path = require('path')
 const fs = require('fs')
 let pathParams, image, imageName;
@@ -8,7 +8,7 @@ let pathParams, image, imageName;
 AWS.config.loadFromPath('config.json')
 
 
-const s3 = new AWS.S3({region: 'us-west-1'})
+const s3 = new AWS.S3({region: 'us-west-2'})
 const createMainBucket = (callback) => {
 	// Create the parameters for calling createBucket
 	const bucketParams = {
